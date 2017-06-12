@@ -25,14 +25,20 @@ function addNote() {
   $numNotesLabel.innerHTML = 'Current number of notes ' + numNotes;
   var $newX = document.createElement('p');
   $newX.innerHTML = 'x';
+  $newX.style.width = '5px';
   $newX.onclick = deleteNote;
   var $noteText = document.createElement('p');
   $noteText.contentEditable = true;
+  console.log('Date() is ' + Date());
+  var $time = document.createElement('p')
+  $time.innerHTML = Date();
+  $time.className = 'time';
 
   var $newNote = document.createElement('p')
   $newNote.className = 'note';
   $newNote.appendChild($newX);
   $newNote.appendChild($noteText);
+  $newNote.appendChild($time);
   $notesDiv.appendChild($newNote);
 }
 
