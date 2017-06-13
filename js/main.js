@@ -25,7 +25,8 @@ function addNote() {
   $numNotesLabel.innerHTML = 'Current number of notes ' + numNotes;
   var $newX = document.createElement('p');
   $newX.innerHTML = 'x';
-  $newX.style.width = '5px';
+  $newX.className = 'x';
+  // $newX.style.cursor = 'pointer';
   $newX.onclick = deleteNote;
   var $noteText = document.createElement('p');
   $noteText.contentEditable = true;

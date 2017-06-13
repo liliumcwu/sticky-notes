@@ -3,6 +3,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-image: "images/sticky-notes.jpg";
 }
 
 #heading {
@@ -25,15 +26,24 @@ body {
   border-radius: 5px;
 }
 
+.x {
+  width: 5px;
+  cursor: pointer;
+}
+
 .note {
   float: left;
-  width: 120px;
-  height: 90px;
+  width: 140px;
+  height: 150px;
   padding: 5px 10px 10px 10px;
 /*  text-align: center;*/
   margin: 10px;
   overflow-wrap: break-word;
   background-color: #FFFFA5;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+  transform: rotate(2deg);
+/*  background-image: url('/images/sticky.jpg');
+  background-size: contain;*/
 }
 
 .time {
